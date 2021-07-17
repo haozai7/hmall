@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/gmall-user/gmall-user.iml" filepath="$PROJECT_DIR$/gmall-user/gmall-user.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/hmall.iml" filepath="$PROJECT_DIR$/.idea/hmall.iml" />
     </modules>
   </component>
