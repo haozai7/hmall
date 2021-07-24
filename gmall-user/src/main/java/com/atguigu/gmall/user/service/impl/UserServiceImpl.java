@@ -23,8 +23,9 @@ public class UserServiceImpl implements UserService {
     @Override
     public List<UmsMember> getAllUser() {
 
-        List<UmsMember> umsMemberList = userMapper.selectAll();//userMapper.selectAllUser();
-
+        //此处是通用mapper的写法
+        //List<UmsMember> umsMemberList = userMapper.selectAll();//userMapper.selectAllUser();
+        List<UmsMember> umsMemberList = userMapper.selectAllUser();
         return umsMemberList;
     }
 
@@ -34,6 +35,9 @@ public class UserServiceImpl implements UserService {
         // 封装的参数对象
         UmsMemberReceiveAddress umsMemberReceiveAddress = new UmsMemberReceiveAddress();
         umsMemberReceiveAddress.setMemberId(memberId);
+
+        //特殊处理：哪个字段不为空就用作条件
+        //等同如下的条件构造
         List<UmsMemberReceiveAddress> umsMemberReceiveAddresses = umsMemberReceiveAddressMapper.select(umsMemberReceiveAddress);
 
 
