@@ -5,6 +5,9 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import java.util.Date;
 
+/**
+ * 修改一次实体类
+ */
 public class UmsMember {
 
     @Id
