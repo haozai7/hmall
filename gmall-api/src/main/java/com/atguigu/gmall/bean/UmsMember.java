@@ -1,14 +1,14 @@
-package com.atguigu.gmall.user.bean;
+package com.atguigu.gmall.bean;
+
+import org.springframework.stereotype.Component;
 
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import java.io.Serializable;
 import java.util.Date;
 
-/**
- * 修改一次实体类
- */
-public class UmsMember {
+public class UmsMember implements Serializable{
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
