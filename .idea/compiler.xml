@@ -6,11 +6,28 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="gmall-common-util" />
+        <module name="gmall-manage-web" />
+        <module name="gmall-web-util" />
+        <module name="gmall-manage-service" />
         <module name="gmall-user" />
+        <module name="gmall-user-web" />
+        <module name="gmall-api" />
+        <module name="gmall-service-util" />
+        <module name="gmall-user-service" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="gmall-user" target="13.0.1" />
+      <module name="gmall-api" target="8" />
+      <module name="gmall-common-util" target="8" />
+      <module name="gmall-manage-service" target="8" />
+      <module name="gmall-manage-web" target="8" />
+      <module name="gmall-parent" target="8" />
+      <module name="gmall-service-util" target="8" />
+      <module name="gmall-user" target="8" />
+      <module name="gmall-user-service" target="8" />
+      <module name="gmall-user-web" target="8" />
+      <module name="gmall-web-util" target="8" />
     </bytecodeTargetLevel>
   </component>
 </project>
