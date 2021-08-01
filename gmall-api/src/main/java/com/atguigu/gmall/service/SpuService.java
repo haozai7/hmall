@@ -25,4 +25,12 @@ public interface SpuService {
      * @return
      */
     List<PmsProductImage> spuImageList(String spuId);
+
+    /**
+     *
+     * @param productId
+     * @param id
+     * @return
+     */
+    List<PmsProductSaleAttr> spuSaleAttrListCheckBySku(String productId, String id);
 }
